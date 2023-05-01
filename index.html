@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>简至杰-个人简历</title>
+    <link rel="shortcut icon" href="assets/images/chip.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关-->
+
+            <!-- 个人肖像 -->
+            <section class="my_img">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    <img class="avatar" src="assets/images/MyPhoto.jpg" onload="loading()">
+                </section>
+
+                
+
+            </section>
+			<section class="me">
+				<h1 class="name">简至杰</h1>
+                <h4 class="info-job">研二 / 华中科技大学</h4>
+                <h4 class="info-job"></h4>预计2024年毕业</h4>
+                <br>
+                <!--
+					在html中插入音频
+					<audio controls="controls" autoplay="autoplay">
+						<source src="assets/audio/frog.mp3" type="audio/mp3">
+					<p>Your browser does not support the audio element</p>
+                    </audio>  
+                -->
+                
+				</section>
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>简至杰 / 男 / 20岁</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>CET-6</span>
+                    </li>
+                    <li>
+                        <label>政治面貌</label>
+                        <span>中共党员</span>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15927388601" target="_blank">15927388601</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:zhijie_jian@hust.edu.cn" target="_blank">zhijie_jian@hust.edu.cn</a>
+                    </li>
+<!--
+                    <li>
+                        <label>个人主页</label>
+                        <a href="http://baidu.com/" target="_blank">0b11111110.com/</a>
+                    </li>
+-->
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/Brain-Simulator" target="_blank">github.com/Brain-Simulator</a>
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <!-- 2020.09	全国大学生机器人大赛ROBOMASTER 全国二等奖     			(国家级)
+            2020.08  全国集成电路创新创业大赛 (Arm杯，西南赛区三等奖)			(省部级)
+            2022.06	全国大学生光电设计竞赛 (企业赛道) 全国一等奖 (金奖) 			(国家级)
+            2019.10	自强奖学金	    									 		(校级)
+            2020.10	学习进步奖学金				      							(院级)     
+            2021.10 研究生一等学业奖学金 										(国家级)
+            2022.10	华中科技大学优秀毕业生       								(校级)
+            2021.06	三好研究生           										(校级)    -->
+
+
+
+
+
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>FPGA</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Verilog/VHDL</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+					<li>
+                        <label>SoC</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>STM32</label>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>C/C++</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Matlab</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Python</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
+				
+
+              <section class="me">
+	          	<img class="avatar" src="assets/images/wechat_mini.png" onload="loading()">
+	          </section>
+				
+            </section>
+			
+
+       
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <time>2021.9-2021.6</time> <b>华中科技大学</b> 集成电路工程 加权成绩
+                            84.96       
+                        </h3>                             
+                    </li>
+                    <li>
+                        <h3>
+                            <time>2017.9-2021.6</time> <b>华中科技大学</b> 集成电路设计与集成系统 加权成绩
+                            84.65   </br> </h3>
+                            <span> <b>研究方向：</b>高速事件型图像传感器(EVS)芯片设计（Team Leader）、神经形态视觉感知&计算系统、混合信号IC建模（ADPLL）与设计空间探索、硬件加速（数字IC/FPGA）、嵌入式系统</span>                              
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 兼职工作 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i> 学生工作与社会兼职</h2>
+                <hr/>
+                <ul>
+
+                    <span><b>1.</b> 湖北省云眸科技有限公司  <b>有限合伙人&嵌入式部负责人</b>
+                    2021.6 - 至今<br/>
+                    <span><b>2.</b> 集成电路工程系第四党支部 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>党支部书记</b>
+                    &nbsp &nbsp &nbsp &nbsp    2022.3 - 2023.3<br/>
+                    <span><b>3.</b> 电子信息与通信学院Robomaster团队 <b>&nbsp&nbsp助教</b>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2021.9 - 至今 <br/>
+
+
+                    									
+                     			  				
+                    
+                </ul>
+            </section>
+
+		
+            <!-- 项目经验 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-bug" aria-hidden="true"></i> 个人项目</h2>
+                <hr/>
+                <ul>
+
+                    <li>
+                        <h3>
+                            <span>[项目1]高速事件型传感器（EVS）芯片设计</span>
+<!--
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+-->
+                            <time>2021.12-至今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：数字/混合信号IC设计与建模 Event-Based Vision设计空间探索 成像系统 Matlab FPGA/Zynq Verilog/VHDL 软硬协同 Embedded-System</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [项目描述]	设计新型“事件型图像传感器（EVS）”，探索其落地应用。面向“高速、低数据量、高动态范围”的目标，进行事件输出延迟分析、假事件产生来源及抑制等理论研究，设计高速、低数据冗余的EVS架构和片内算法，并进行高效硬件实现
+                            </li>
+
+                            <li>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]架构、算法、数字电路负责人
+                            </li>
+
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]
+                            </li>
+                            <b>1. 架构设计</b>：调研论文，确定芯片架构、实现方案和测试方案等<br/>
+                            <b>2. 系统建模</b>：完成像素 <b>Circuit-Level 建模</b>、数字电路架构建模，完成架构可行性验证<br/>
+                            <b>3. 核心算法设计：</b>设计高效AER压缩编码算法和事件流降噪算法，并进行硬件实现。<br/>
+                            <b>4. 芯片设计实现：</b>完成核心数字电路设计与时序分析（像素行列控制FSM、GAER模块、阈值校准模块、SPI接口等），完成包括前仿、CDC检查、原型验证和后仿的<b>数字IC前端设计全流程</b>，与团队合作完成0.18um和40nm流片。<br/>
+                            <b>5. 芯片测试：</b>基于Zynq-7000实现最大支持<b>1080P@60Hz的实时成像</b>，满足EVS成像需求<br/>
+                            
+                            
+                            
+                                    
+        
+                                <li>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]作与团队合作完成一次0.18um流片（2022.06）和一次40nm流片（2022.10），其中40nm流片最大事件速率为800Meps，达到国际先进水平。
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <h3>
+                            <span>[项目2]小数分频全数字锁相环（ADPLL）系统建模</span>
+<!--
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+-->
+                            <time>2021.11-2022.3</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：混合信号IC建模 数字电路设计 Matlab FPGA原型验证 Verilog/VHDL</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [项目描述]	基于Matlab和Verilog完成ADPLL的系统建模，使用模型输出频谱的杂散等指标，仿真片内DLF（数字滤波器）的参数，用于电路实现；同时根据芯片spec要求，定义各个核心电路模块的指标，用于方案设计。
+
+                            </li>
+
+                            <li>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]唯一成员
+                            </li>
+
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]
+                            </li>
+                            
+                            <b>1.</b> 基于Verilog完成<b>ADPLL电路级建模</b>，包括TDC、DLF、DCO、DIV、DTC、DSM等小数分频ADPLL核心模块<br/>
+                            <b>2.</b> 与<b>Cadence联合仿真</b>，为模型加入二级效应，如TDC的INL、DNL非线性，DCO的jitter、wander等非理想效应<br/>
+                            <b>3.</b> 基于Matlab绘制输出频谱，结果与实际电路的频谱基本一致，证明建模准确。<br/>
+                            <b>4.</b> 完成PLL中数字模块（如延迟校准、占空比检测等）的设计和FPGA原型验证，<b>参与PLL 0.18um的流片</b>。<br/>
+                            
+                            
+        
+                    <li>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        [效果] 基于该 ADPLL 模型平台可快速评估架构可行性，从而可根据芯片规格书规划设计架构方案和电路参数
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>[项目3]应用于深空通信的卷积码算法设计及FPGA实现</span>
+<!--
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+-->
+                        <time>2021.3-2021.6</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：数字IC设计 通信原理 数字信号处理 Matlab FPGA Verilog/VHDL</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [项目描述]	基于Matlab仿真卷积码算法，将编解码算法在FPGA端实现，部署在通信系统中
+
+                            </li>
+
+                            <li>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]唯一成员 
+                            </li>
+
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献] 
+                            </li>
+                            <b>1.</b> 基于Matlab完成<b>通信系统建模</b>，定量分析约束长度、码率、软/硬判决方式等因素对卷积码误码率的影响<br/>
+                            <b>2.</b> 基于课题对误码率的要求和建模分析结果，设计<b>高效卷积码编解码算法</b><br/>
+                            <b>3.</b> 基于FPGA（artix-7）高效实现卷积码编码算法和维特比译码算法，解码时钟主频可达到200MHz，高于同类设计典型主频（60-80MHz），资源消耗为335个LUT和272个FF，与同类设计持平。误码率在10^-4量级，满足课题需求<br/>
+                            
+                            
+                            
+        
+                                <li>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果] 设计高效卷积码编解码算法，并<b>基于 FPGA 实现</b>，时钟频率达到 200MHz，优于同类设计；BER 小于 10−4，满足课题要求
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <h3>
+                            <span>[项目4] 高速实时零件计数器（全国大学生光电设计竞赛 全国金奖）</span>
+                        <time>2022.2 - 2022.9</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：数字IC设计 硬件加速 计算机视觉 FPGA/Zynq Verilog/VHDL</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [项目描述]	基于Matlab仿真卷积码算法，将编解码算法在FPGA端实现，部署在通信系统中
+
+                            </li>
+
+                            <li>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]负责人 
+                            </li>
+
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]
+                            </li>
+                            <b>1.</b> PCB设计：完成零件计数器PCB的设计与制作，包括电源管理、电机、舵机驱动等核心电路<br/>
+                            <b>2.</b> 嵌入式软件：完成基于STM32的嵌入式代码的编写与软硬联调，设计通信协议与边缘计算设备通信<br/>
+                            <b>3.</b> 算法加速：和算法工程师合作，将超分辨成像和图像预处理的部分部署在Zynq-7000平台<br/>
+                            
+        
+                                <li>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果] 实现高速实时的零件计数功能，可在一秒内完成数百个同尺寸大小零件的高精度打包
+                            </li>
+                        </ul>
+                    </li>
+                    
+
+
+                    <li>
+                        <h3>
+                            <span>[项目5]全国集成电路创新创业大赛-Arm杯</span>
+<!--
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+-->
+                            <time>2020.3-2020.7</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：FPGA Verilog/VHDL Hardware-Accelerator SoC Embedded-System Tensorflow</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现基于Arm Cortex-M3处理器核的智能化SoC
+                            </li>
+
+                            <li>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 2 位同专业同学一起
+                            </li>
+
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]
+                            </li>
+                                <b>1.</b>完成从<b>“调研-设计-实现-文档”</b>等工作；<br/>
+                                <b>2.</b>负责设计<b>SoC架构</b>（基于Cortex-M3内核），内核外设包括DDR、UART、GPIO、CSI接口和HDMI接口；<br/>
+                                <b>3.</b>基于<b>FPGA</b>（Xilinx Artix7）实现了该SoC，并移植了拥有独立AI指令集的<b>张量协处理器"TPU"</b>对密集矩阵运算进行硬件加速）（该协处理器用vhdl实现，
+                                针对 "Google, In-Datacenter Performance Analysis of a Tensor Processing Unit,ISCA17,ACM"论文中的Google TPU架构进行了合理简化，
+                                以最大限度利用Xilinx Artix7平台上的资源）；<br/>
+                                <b>4.</b>实现<b>软硬件协同设计</b>，独立调试Cortex-M3（50MHz）和TPU（150MHz）的数据传输和总线接口（AXI），并编写<b>嵌入式软件（C/C++）</b>控制
+                                Cortex-M3读写DDR、向TPU写入指令和部分运算数据，以及中断、UART输入/输出等功能。
+        
+                                <li>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]作品最终实现了对minst数据集识别的硬件加速，获得全国集成电路创新创业大赛西南赛区三等奖。
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>[项目6]全国大学生机器人大赛RoboMaster</span>
+<!--
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+-->
+                            <time>2018.9-2020.8</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：PCB Embedded-System C/C++ Matlab Robotics</li>
+                            <!-- <li> -->
+                                
+                                <li> 
+                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                    [目标]实现满足特定场景和性能需求的机器人  
+                                </li>
+                                
+                                
+                                <li> 
+                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                    [团队]华中科技大学-狼牙团队 
+                                </li>
+                            
+                                
+                                <li> 
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                    [贡献] 
+                                </li> 
+                                    <b>1.</b>负责英雄机器人的电路硬件<b>PCB</b>设计、调试与制作，如电机驱动、滑环、“机电一体”所需的底盘转接板等；<br/>
+                                    <b>2.</b>部分<b>嵌入式软件（C/C++）</b>调试任务，机器人主控基于<b>STM32</b>；<br/>
+                                    <b>3.</b>负责机器人的装配、布线、debug等工作；<br/>
+                                    <b>4.</b>负责机器人部分测试系统的硬件和软件的制作，如完成了可以检测机器人大/小弹丸打击（以评估机器人图像识别准确率）的PCB和嵌入式软件。
+                                <li> 
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]完成了英雄机器人所需的性能指标，获得全国大学生机器人大赛RoboMaster全国二等奖。</li> 
+                            <!-- </li> -->
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>[项目7]基于FPGA的直流电机伺服控制系统</span>
+<!--
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+-->
+                            <time>2019.10-2019.12</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：FPGA PCB PID C/C++ Matlab Robotics</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]</li>
+                                （1）实现PWM逻辑和桥式驱动电路以驱动小型直流电机，可开环控制其转速变化；<br/>
+                                （2）实现测速电路和逻辑，能够测量并显示电机的实时转速；<br/>
+                                （3）实现PID反馈控制算法连接测速逻辑和PWM驱动逻辑，实现对电机空载转速的精确控制
+                                <br/>
+                                <!-- <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]华中科技大学-狼牙团队
+                                <br/> -->
+                                <li> 
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                [工作]</li>
+                                <b>1.</b>完成了<b>电机驱动硬件电路板</b>的设计与制作，H桥驱动芯片基于ST的L6205；<br/>
+                                <b>2.</b>基于<b>FPGA</b>（Altera Cyclone Ⅳ）的RTL级代码实现了<b>PID</b>闭环控制、PWM驱动逻辑、测速逻辑、显示逻辑等功能；<br/>
+                                <b>3.</b>完成了FPGA开发板和电机驱动板的联调。
+                                <li> 
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]实现了电机速度的实时显示和闭环控制，可以用于需要精确控制直流电机转速的应用场景。</li>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </section>
+
+<!--			我的技能-->
+			<section class="work info-unit">
+                <h2>
+                    <i class="fa fa-battery-3" aria-hidden="true"></i> 我的技能/特长</h2>
+                <hr/>
+<!--			工作技能	-->
+				<ul>
+                <li>
+                        <h3>
+                            <span>工作技能</span>
+<!--
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+-->                   
+                </h3>
+				<ul class="info-content">
+                <li>有较强项目管理能力，作为核心负责人和团队一起完成对实验室新方向（<b>事件型视觉传感器，EVS</b>）的初步探索；</li>
+                <li>对神经形态感知与计算、Emerging IC的设计空间探索有较深理解</li>
+                <li>熟悉<b>verilog</b>，可以阅读vhdl，熟悉AMBA协议，熟悉Altera、Xilinx公司的<b>FPGA</b>开发工具，有基于Arm核心开发SoC的经验，有调试协处理器的经验；</li>
+                <li>熟悉<b>计算机和处理器体系结构</b>，了解基本神经网络算法以及硬件加速器的实现思想，熟悉Google的TPU的体系结构，熟悉存算一体架构的思想；</li>
+                <li>熟悉<b>SoC</b>数据通路的加速，了解跨时钟域的同步设计和时序优化</li>
+                <li>有过单板硬件开发经验，有机器人整体布线、调试经验，拥有系统意识；</li>
+                <li>熟悉<b>C/C++</b>，有嵌入式软件的开发经验，尤其是STM32以及基于Arm SoC的<b>软硬件协同设计</b>；</li>
+                <li>了解matlab、tcl脚本语言，较熟悉<b>linux</b>环境；</li>
+                <li>了解类脑计算（特指In-Memory Computing）的基本理论（如STDP）和部分SNN算法，以及当前存算一体架构面临的困难；</li>
+                <li>英语能力较好，擅长制作PPT，擅长撰写技术文档。</li>
+
+			    </ul>	
+				</li>
+				</ul>
+				
+<!--				业余特长-->
+				<ul>
+                <li>
+                        <h3>
+                            <span>其他特长</span>
+<!--
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+-->
+                            
+                        </h3>
+				<ul class="info-content">
+<!--					<p>-->
+
+        <li>擅长朗诵、播音、主持，是华中科技大学广播台中文播音组和校主持人队的成员，曾承担华中科技大学晚间新闻和部分节目的播音工作，同时承担部分新人的培训工作，并多次参加大型晚会的朗诵节目；</li>
+        <li>有多媒体平台运营经验，且有一定的文书功底，曾经运营过公众号；</li>
+        <li>长期在学生团队中工作，善于与团队成员交流沟通。</li>
+
+     			</ul>	
+				</li>
+				</ul>
+				
+            </section>
+					
+		
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i> 自我评价/期望</h2>
+                <hr/>
+
+				
+                <p>我是一个兴趣广泛的人，有丰富的课余爱好，如乒乓球、播音、钢琴；除此之外，我也对很多未曾涉猎的技术领域有着强烈的好奇心，例如在本科期间，除了我的专业必修课程外，我还对单板硬件设计、嵌入式系统设计、AI＆类脑计算有所涉猎。广泛的涉猎既拓宽了我的知识面，使我得以很快适应学科融合的项目，也显著提升了我学习和检索资料的能力。同时，我非常关注国际政治，也对历史、文化等人文社科领域的某些学科有着浓厚的兴趣，我努力使自己变成一个用专业技能、人文素养“两条腿走路”的人。
+                    <span class="mark-txt"></span><br/>
+</p>
+            </section>
+			
+			
+
+			
+        </section>
+		
+		
+    </article>
+
+
+
+    <footer class="footer">
+        <p>© 2023 简至杰.文档最后更新时间为
+            <time>2023年5月1日</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+<!--
+    <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/itsay/resume" target="_blank">源代码</a>
+            </li>
+            <li>
+                <a href="http://if2er.com/" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </aside>
+-->
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
